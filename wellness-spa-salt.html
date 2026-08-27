@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness & Spa Salt - Himalayan Salt Co.</title>
+    <style>
+        :root {
+            --primary-color: #c86d51;
+            --dark-color: #141c24;
+            --light-bg: #fdfaf7;
+            --text-color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navbar & Header Setup */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        a.logo {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: #c86d51 !important;
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+a.logo:visited, 
+a.logo:hover, 
+a.logo:active {
+    color: #c86d51 !important;
+    text-decoration: none !important;
+}
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            min-width: 200px;
+            z-index: 100;
+            border-radius: 4px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(rgba(20, 28, 36, 0.6), rgba(20, 28, 36, 0.6)), url('images/spa-stones.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Product Cards Grid Section */
+        .products-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark-color);
+            color: #d0d7de;
+            font-size: 0.88rem;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+     <!-- Hero Section -->
+	<div style="padding: 15px 20px; background: #fff; border-bottom: 1px solid #e8ded5;">
+    <a href="index.html" style="color: #c86d51; font-weight: bold; text-decoration: none;">← Back to Main Home</a>
+</div>
+<!-- Hero Banner Section for Wellness & Spa -->
+<section class="hero-banner" style="background: linear-gradient(rgba(20, 28, 36, 0.25), rgba(20, 28, 36, 0.25)), url('images/spa-salt.jpeg') center/cover no-repeat; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Wellness & Spa Salt</h1>
+    <p style="font-size: 1.1rem; max-width: 700px;">Premium quality Himalayan Pink Salt products for luxury wellness and spa experiences.</p>
+</section>
+ 
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="images/spa-stones.jfif" alt="Therapeutic Massage Stones">
+                <div class="product-info">
+                    <h3>Therapeutic Massage Stones</h3>
+                    <p>Smooth, hand-carved pink salt massage stones that soothe sore muscles and restore essential minerals.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/spa-salts.jfif" alt="Premium Bath Salts">
+                <div class="product-info">
+                    <h3>Premium Bath Salts</h3>
+                    <p>Natural crystal salt grains rich in minerals, ideal for relaxing bath soaks and skin rejuvenation.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/detox-soak.jfif" alt="Mineral Detox Soak">
+                <div class="product-info">
+                    <h3>Mineral Detox Soak</h3>
+                    <p>A clarifying blend of pink salt chunks and oils designed to draw out impurities and refresh the body.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/aroma-therapy.jfif" alt="Aroma Therapy Salt Blend">
+                <div class="product-info">
+                    <h3>Aroma Therapy Blends</h3>
+                    <p>Aromatic mineral salt blends enriched with essential botanicals for an invigorating spa experience.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;2026 Utility Home Export Division. Premium Himalayan Pink Salt Export to All Over The World.</p>
+    </footer>
+
+</body>
+</html>

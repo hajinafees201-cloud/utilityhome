@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor & Salt Lamps - Himalayan Salt Co.</title>
+    <style>
+        :root {
+            --primary-color: #c86d51;
+            --dark-color: #141c24;
+            --light-bg: #fdfaf7;
+            --text-color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navbar & Header Setup */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        a.logo {
+            font-size: 1.2rem !important;
+            font-weight: 600 !important;
+            color: #c86d51 !important;
+            text-decoration: none !important;
+            display: inline-block;
+        }
+
+        a.logo:visited, 
+        a.logo:hover, 
+        a.logo:active {
+            color: #c86d51 !important;
+            text-decoration: none !important;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Product Cards Grid Section */
+        .products-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark-color);
+            color: #d0d7de;
+            font-size: 0.88rem;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Back to Home Navigation Bar -->
+    <div style="padding: 15px 20px; background: #fff; border-bottom: 1px solid #e8ded5;">
+        <a href="index.html" style="color: #c86d51; font-weight: bold; text-decoration: none;">← Back to Main Home</a>
+    </div>
+
+    <!-- Hero Banner Section for Salt Lamps & Decor -->
+    <section class="hero-banner" style="background: linear-gradient(rgba(20, 28, 36, 0.25), rgba(20, 28, 36, 0.25)), url('images/b-salt.jfif') center/cover no-repeat; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Himalayan Salt Lamps & Decor</h1>
+        <p style="font-size: 1.1rem; max-width: 700px;">Handcrafted ambient rock salt lamps and decorative accessories compliant with CE & RoHS European standards.</p>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="product-grid">
+
+            <!-- Card 1: Carved Salt Blocks & Slabs -->
+            <div class="product-card">
+                <img src="images/c-salt.jfif" alt="Carved Salt Blocks and Tiles">
+                <div class="product-info">
+                    <h3>Carved Salt Blocks & Slabs</h3>
+                    <p>Hand-carved Himalayan crystal rock salt blocks and tiles with custom relief patterns, ideal for luxury interior decor and spa accents.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Tea Light Candle Holders -->
+            <div class="product-card">
+                <img src="images/n-salt.jfif" alt="Natural Tea Light Candle Holders">
+                <div class="product-info">
+                    <h3>Tea Light Candle Holders</h3>
+                    <p>Natural hand-shaped pink rock salt candle holders emitting a warm, soothing glow that enhances home ambiance and air quality.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Geometric Salt Lamps -->
+            <div class="product-card">
+                <img src="images/p-salt.jfif" alt="Pyramid and Sphere Salt Lamps">
+                <div class="product-info">
+                    <h3>Geometric Salt Lamps</h3>
+                    <p>Precision-crafted pyramid and sphere salt crystal lamps mounted on solid rosewood bases, tailored for modern European homes.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Natural Rough Cut Lamp -->
+            <div class="product-card">
+                <img src="images/n-salt.jfif" alt="Natural Rough Cut Salt Lamp">
+                <div class="product-info">
+                    <h3>Natural Rough Cut Lamp</h3>
+                    <p>Authentic unpolished natural rock salt crystal lamp on a wooden base, preserving natural mineral aesthetics and ionic benefits.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Utility Home Export Division. Premium Himalayan Pink Salt Export to All Over The World.</p>
+    </footer>
+
+</body>
+</html>
