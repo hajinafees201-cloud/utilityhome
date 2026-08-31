@@ -3,336 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Edible Himalayan Pink Salt | European Export Supply</title>
+    <title>Edible Himalayan Pink Salt & Spices | Utility Home Exports</title>
+    <meta name="description" content="Export Grade Edible Himalayan Pink Salt in Fine, Medium, Coarse grains and natural spice blends. Bulk B2B packaging available.">
     <style>
-        :root {
-            --primary-color: #c86d51;
-            --secondary-color: #1f2d3d;
-            --accent-color: #e59882;
-            --bg-light: #faf7f5;
-            --card-bg: #ffffff;
-            --text-dark: #2c3e50;
-            --text-muted: #626d7a;
-            --border-color: #e8ded5;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        :root { --primary-color: #d9534f; --dark-color: #1a252f; --light-color: #f8f9fa; --text-color: #333333; --accent-color: #c0392b; }
+        body { color: var(--text-color); line-height: 1.6; background-color: #ffffff; }
+        header { background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--primary-color); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-menu { display: flex; list-style: none; align-items: center; }
+        .nav-item { position: relative; margin-left: 25px; }
+        .nav-link { text-decoration: none; color: var(--dark-color); font-weight: 600; padding: 10px 0; transition: color 0.3s; }
+        .nav-link:hover { color: var(--primary-color); }
+        .dropdown-menu { position: absolute; top: 100%; left: 0; background-color: #ffffff; box-shadow: 0 8px 16px rgba(0,0,0,0.15); min-width: 220px; display: none; flex-direction: column; border-radius: 4px; overflow: hidden; border-top: 3px solid var(--primary-color); }
+        .dropdown-menu a { padding: 12px 16px; text-decoration: none; color: var(--text-color); font-size: 14px; font-weight: 500; border-bottom: 1px solid #f0f0f0; transition: background 0.3s; }
+        .dropdown-menu a:hover { background-color: #f8f9fa; color: var(--primary-color); }
+        .nav-item:hover .dropdown-menu { display: flex; }
+        .btn-header { background-color: var(--primary-color); color: #ffffff !important; padding: 8px 18px; border-radius: 4px; }
+        
+        /* UPDATE: Updated Banner Background with New Image */
+        .page-banner { background: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10)), url('01/b01e.jpeg') center/cover no-repeat; background-color: var(--dark-color); color: #fff; padding: 100px 20px; text-align: left; padding: 60px 20px 60px 30px; }
+        .page-banner h1 { font-size: 36px; margin-bottom: 10px; }
+        
+        .content-section { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+        .details-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
+        
+        /* ADDITION: Card Image Styling */
+        .detail-card { border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .detail-card:hover { transform: translateY(-5px); }
+        .card-image { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #e0e0e0; }
+        .card-content { padding: 20px; }
+        .detail-card h3 { color: var(--dark-color); margin-bottom: 10px; }
+        
+        .btn-order { display: inline-block; background-color: var(--primary-color); color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 4px; font-weight: 600; margin-top: 30px; }
+        .btn-order:hover { background-color: var(--accent-color); }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Hero Banner */
-        .hero {
-            background: linear-gradient(rgba(31, 45, 61, 0.25), rgba(31, 45, 61, 0.25)), 
-                        url('images/001.jpeg') center/cover no-repeat;
-            color: #ffffff;
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 4px solid var(--primary-color);
-        }
-        .hero span.badge {
-            background-color: var(--primary-color);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 600;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin: 20px 0 10px;
-            letter-spacing: 0.5px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 750px;
-            margin: 0 auto;
-            color: #dcdfe6;
-        }
-
-        /* Products Grid */
-        .section-title {
-            text-align: center;
-            margin: 50px 0 30px;
-        }
-
-        .section-title h2 {
-            font-size: 2.2rem;
-            color: var(--secondary-color);
-        }
-
-        .section-title p {
-            color: var(--text-muted);
-            font-size: 1.05rem;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
-        }
-
-        .product-card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .card-body {
-            padding: 20px;
-        }
-
-        .card-body h3 {
-            font-size: 1.3rem;
-            color: var(--secondary-color);
-            margin-bottom: 10px;
-        }
-
-        .card-body p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #fdf0ec;
-            color: var(--primary-color);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        /* Specifications & EU Standards */
-        .specs-section {
-            background: #ffffff;
-            padding: 50px 0;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .specs-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
+        footer { background-color: var(--dark-color); color: #ffffff; padding: 40px 20px 20px 20px; margin-top: 60px; }
+        .footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .footer-column h3 { font-size: 18px; margin-bottom: 15px; color: var(--primary-color); }
+        .footer-column p, .footer-column a { color: #bdc3c7; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block; }
+        .footer-bottom { text-align: center; border-top: 1px solid #34495e; padding-top: 20px; font-size: 13px; color: #7f8c8d; }
+        
         @media (max-width: 768px) {
-            .specs-grid { grid-template-columns: 1fr; }
-        }
-
-        .specs-box h3 {
-            font-size: 1.5rem;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 12px;
-        }
-
-        .table-specs {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .table-specs td {
-            padding: 12px 15px;
-            border-bottom: 1px solid var(--border-color);
-            font-size: 0.95rem;
-        }
-
-        .table-specs td:first-child {
-            font-weight: 600;
-            color: var(--secondary-color);
-            width: 45%;
-            background: #fbf9f7;
-        }
-
-        .bullet-list {
-            list-style: none;
-        }
-
-        .bullet-list li {
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 15px;
-            color: var(--text-dark);
-        }
-
-        .bullet-list li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        /* CTA Box */
-        .cta-box {
-            background: var(--secondary-color);
-            color: #ffffff;
-            text-align: center;
-            padding: 45px 20px;
-            border-radius: 12px;
-            margin: 50px auto;
-        }
-
-        .cta-box h2 { font-size: 2rem; margin-bottom: 12px; }
-        .cta-box p { color: #d0d7de; max-width: 600px; margin: 0 auto 25px; }
-
-        .btn-submit {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            padding: 14px 35px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #141c24;
-            color: #8392a5;
-            font-size: 0.88rem;
+            .nav-container { flex-direction: column; align-items: flex-start; }
+            .nav-menu { flex-direction: column; width: 100%; margin-top: 15px; display: none; }
+            .nav-container:hover .nav-menu { display: flex; }
+            .nav-item { margin: 10px 0; width: 100%; }
+            .dropdown-menu { position: static; box-shadow: none; border-top: none; padding-left: 15px; }
         }
     </style>
 </head>
 <body>
-
-    <!-- Hero Section -->
-	<div style="padding: 15px 20px; background: #fff; border-bottom: 1px solid #e8ded5;">
-    <a href="index.html" style="color: #c86d51; font-weight: bold; text-decoration: none;">← Back to Main Home</a>
-</div>
-    <header class="hero">
-        <div class="container">
-            <span class="badge">EU Standard Food Grade</span>
-            <h1>100% Gourmet Edible Himalayan Salt</h1>
-            <p>Pure, Unrefined, and Mineral-Rich Pink Salt Sourced Directly for European Food Brands, Wholesalers & Culinary Retailers.</p>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Utility Home Exports</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                    <a href="index.html#products" class="nav-link">Products ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="edible-pink-salt.html">Edible Salt & Spices</a>
+                        <a href="wellness-spa-salt.html">Wellness & Spa Salt</a>
+                        <a href="salt-lamps.html">Salt Lamps & Crafts</a>
+                        <a href="animal-salt-licks.html">Animal Salt Licks</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link btn-header">Contact Us</a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Culinary Showcase -->
-    <main class="container">
-        <div class="section-title">
-            <h2>Culinary Applications & Product Range</h2>
-            <p>Export-ready packaging and forms tailored for European dining and retail standards.</p>
-        </div>
+    <section class="page-banner">
+        <h1>Edible Pink Salt & Gourmet Spices</h1>
+        <p>100% Pure Food-Grade Himalayan Mineral Salt Direct from Khewra Mines</p>
+    </section>
 
-        <div class="gallery-grid">
-            <div class="product-card">
-                <img src="images/pink-salt-jar.jpeg" alt="Himalayan Pink Salt Gourmet Glass Jar">
-                <div class="card-body">
-                    <span class="tag">Fine & Medium Grain</span>
-                    <h3>Retail Glass Jars & Pouches</h3>
-                    <p>Perfectly dried, 100% pure culinary salt packed in premium glass jars and eco-kraft zipper bags for store shelves.</p>
+    <section class="content-section">
+        <h2>Specifications & Grain Sizes</h2>
+        <p>We process premium edible pink salt under strict HACCP and ISO standards for global food chains and retailers.</p>
+        
+        <div class="details-grid">
+            <!-- ADDITION: Card 1 Image Tag -->
+            <div class="detail-card">
+                <img src="01/002.jpeg" alt="Fine Grain Himalayan Pink Salt" class="card-image">
+                <div class="card-content">
+                    <h3>Fine Grain (0.2mm - 0.8mm)</h3>
+                    <p>Ideal for household shakers, tabletop seasoning, and food manufacturing applications.</p>
                 </div>
             </div>
-
-            <div class="product-card">
-                <img src="images/pink-salt-grinder.jpeg" alt="Pink Salt Grinder Mill">
-                <div class="card-body">
-                    <span class="tag">Coarse Grain (2-5mm)</span>
-                    <h3>Spice Mills & Grinder Refills</h3>
-                    <p>Hard-crystal pink salt coarse grains designed specifically for ceramic and stainless steel table pepper & salt grinders.</p>
+            <!-- ADDITION: Card 2 Image Tag -->
+            <div class="detail-card">
+                <img src="01/003.jpeg" alt="Coarse Grain Himalayan Pink Salt" class="card-image">
+                <div class="card-content">
+                    <h3>Coarse Grain (2mm - 5mm)</h3>
+                    <p>Perfect for salt grinders, mills, pickling, and gourmet culinary finishing.</p>
                 </div>
             </div>
-
-            <div class="product-card">
-                <img src="images/pink-salt-mortar.jpeg" alt="Himalayan Salt Mortar Pestle Bowl">
-                <div class="card-body">
-                    <span class="tag">Artisanal Cookware</span>
-                    <h3>Salt Mortar & Spice Pestle</h3>
-                    <p>Hand-crafted 100% natural salt bowl for crushing herbs, releasing organic aroma and natural mineral seasoning directly.</p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="images/pink-salt-cooking-block.jpeg" alt="Himalayan Pink Salt Cooking Tile Slab">
-                <div class="card-body">
-                    <span class="tag">Gourmet Slabs</span>
-                    <h3>Salt Slabs & Cooking Tiles</h3>
-                    <p>Heavy-duty natural salt blocks for direct frying, grilling, searing steaks, and serving delicate tapas or half-fried eggs.</p>
+            <!-- ADDITION: Card 3 Image Tag -->
+            <div class="detail-card">
+                <img src="01/001.jpeg" alt="Himalayan Pink Salt Spice Blends" class="card-image">
+                <div class="card-content">
+                    <h3>Pink Salt Spice Blends</h3>
+                    <p>Custom herb & spice mixed salt products tailored for European and US supermarket chains.</p>
                 </div>
             </div>
         </div>
-    </main>
-
-    <!-- Specifications Section -->
-    <section class="specs-section">
-        <div class="container">
-            <div class="specs-grid">
-                <div class="specs-box">
-                    <h3>Technical Specifications</h3>
-                    <table class="table-specs">
-                        <tr><td>Product Name</td><td>Edible Himalayan Pink Crystal Salt</td></tr>
-                        <tr><td>Chemical Composition</td><td>98.5%+ Sodium Chloride (NaCl)</td></tr>
-                        <tr><td>Trace Minerals</td><td>Rich in Iron, Potassium, Calcium, Magnesium</td></tr>
-                        <tr><td>Available Sizes</td><td>Fine (0.2–0.8mm), Coarse (2–5mm), Slabs</td></tr>
-                        <tr><td>Quality Standard</td><td>Food Grade, ISO 22000, HACCP Certified</td></tr>
-                        <tr><td>Shelf Life</td><td>5 Years (Store in dry environment)</td></tr>
-                    </table>
-                </div>
-
-                <div class="specs-box">
-                    <h3>European Market Compliance</h3>
-                    <ul class="bullet-list">
-                        <li><strong>Strict Heavy Metal Testing:</strong> Fully tested & free from microplastics, heavy metals, or chemical additives.</li>
-                        <li><strong>European Lab Certification:</strong> Accompanied by full batch analysis reports (Certificate of Analysis - CoA).</li>
-                        <li><strong>Custom Packaging & Private Label:</strong> OEM / Private labeling ready with barcode, batch code & multilingual EU text.</li>
-                        <li><strong>Flexible Bulk Freight:</strong> Exported in 25kg PE-lined PP bags or 1-ton FIBC Jumbo bags for EU importers.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="cta-box">
-                <h2>Request Samples or Bulk European B2B Quote</h2>
-                <p>Looking to import edible pink salt or custom-branded retail packages into Europe?</p>
-                <a href="contact.html" class="btn-submit">Contact EU Sales Representative</a>
-            </div>
-        </div>
+        
+        <a href="contact.html" class="btn-order">Request Bulk Pricing & Specs</a>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Utility Home Export Division. Premium Himalayan Pink Salt Export to All Over The World.</p>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Utility Home Export Division</h3>
+                <p>Leading exporter of Himalayan Pink Salt products in Pakistan.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="edible-pink-salt.html">Edible Salt</a>
+                <a href="wellness-spa-salt.html">Spa Products</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>B2B Export Contact</h3>
+                <p>📍 Gujranwala / Khewra, Pakistan</p>
+                <p>📧 Email: export@utilityhome.com</p>
+                <p>📞 Phone/WhatsApp: +92-300-6474593</p>
+            </div>
         </div>
+        <div class="footer-bottom"><p>© 2026 Utility Home Export Division.</p></div>
     </footer>
-
 </body>
 </html>

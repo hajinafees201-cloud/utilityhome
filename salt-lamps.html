@@ -3,207 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decor & Salt Lamps - Himalayan Salt Co.</title>
+    <title>Handcrafted Salt Lamps & Decor Crafts | Utility Home Exports</title>
+    <meta name="description" content="Wholesale Himalayan Salt Lamps manufacturer in Pakistan. Natural shapes, geometric bowls, and carved lamps with UL/CE certified fittings.">
     <style>
-        :root {
-            --primary-color: #c86d51;
-            --dark-color: #141c24;
-            --light-bg: #fdfaf7;
-            --text-color: #333;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        :root { --primary-color: #d9534f; --dark-color: #1a252f; --light-color: #f8f9fa; --text-color: #333333; --accent-color: #c0392b; }
+        body { color: var(--text-color); line-height: 1.6; background-color: #ffffff; }
+        
+        /* Navigation */
+        header { background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--primary-color); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-menu { display: flex; list-style: none; align-items: center; }
+        .nav-item { position: relative; margin-left: 25px; }
+        .nav-link { text-decoration: none; color: var(--dark-color); font-weight: 600; padding: 10px 0; transition: color 0.3s; }
+        .nav-link:hover { color: var(--primary-color); }
+        .dropdown-menu { position: absolute; top: 100%; left: 0; background-color: #ffffff; box-shadow: 0 8px 16px rgba(0,0,0,0.15); min-width: 220px; display: none; flex-direction: column; border-radius: 4px; overflow: hidden; border-top: 3px solid var(--primary-color); }
+        .dropdown-menu a { padding: 12px 16px; text-decoration: none; color: var(--text-color); font-size: 14px; font-weight: 500; border-bottom: 1px solid #f0f0f0; transition: background 0.3s; }
+        .dropdown-menu a:hover { background-color: #f8f9fa; color: var(--primary-color); }
+        .nav-item:hover .dropdown-menu { display: flex; }
+        .btn-header { background-color: var(--primary-color); color: #ffffff !important; padding: 8px 18px; border-radius: 4px; }
+        
+        /* Banner */
+        .page-banner { background: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10)), url('01/b02w.jpeg') center/cover no-repeat; background-color: var(--dark-color); color: #fff; padding: 120px 20px; text-align: center; }
+        .page-banner h1 { font-size: 36px; margin-bottom: 10px; }
+        
+        /* Content Section */
+        .content-section { max-width: 1200px; margin: 50px auto; padding: 0 20px; text-align: center; }
+        .content-section h2 { color: var(--dark-color); font-size: 28px; margin-bottom: 10px; }
+        
+        /* Updated Product Cards Grid */
+        .details-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; text-align: left; }
+        .detail-card { border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
+        .detail-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+        .card-img { width: 100%; height: 220px; object-fit: cover; }
+        .card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .detail-card h3 { color: var(--dark-color); margin-bottom: 10px; font-size: 20px; }
+        .detail-card p { color: #555; font-size: 14.5px; line-height: 1.5; }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--light-bg);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        /* Navbar & Header Setup */
-        header {
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-        }
-
-        a.logo {
-            font-size: 1.2rem !important;
-            font-weight: 600 !important;
-            color: #c86d51 !important;
-            text-decoration: none !important;
-            display: inline-block;
-        }
-
-        a.logo:visited, 
-        a.logo:hover, 
-        a.logo:active {
-            color: #c86d51 !important;
-            text-decoration: none !important;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--dark-color);
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Hero Banner */
-        .hero-banner {
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .hero-banner h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        /* Product Cards Grid Section */
-        .products-section {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .product-info {
-            padding: 20px;
-        }
-
-        .product-info h3 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .product-info p {
-            font-size: 0.9rem;
-            color: #666;
-        }
+        /* Button */
+        .btn-order { display: inline-block; background-color: var(--primary-color); color: #fff; padding: 14px 30px; text-decoration: none; border-radius: 5px; font-weight: 600; margin-top: 40px; transition: background 0.3s; }
+        .btn-order:hover { background-color: var(--accent-color); }
 
         /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: var(--dark-color);
-            color: #d0d7de;
-            font-size: 0.88rem;
-            margin-top: 50px;
+        footer { background-color: var(--dark-color); color: #ffffff; padding: 40px 20px 20px 20px; margin-top: 60px; text-align: left; }
+        .footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .footer-column h3 { font-size: 18px; margin-bottom: 15px; color: var(--primary-color); }
+        .footer-column p, .footer-column a { color: #bdc3c7; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block; }
+        .footer-bottom { text-align: center; border-top: 1px solid #34495e; padding-top: 20px; font-size: 13px; color: #7f8c8d; }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; align-items: flex-start; }
+            .nav-menu { flex-direction: column; width: 100%; margin-top: 15px; display: none; }
+            .nav-container:hover .nav-menu { display: flex; }
+            .nav-item { margin: 10px 0; width: 100%; }
+            .dropdown-menu { position: static; box-shadow: none; border-top: none; padding-left: 15px; }
         }
     </style>
 </head>
 <body>
-
-    <!-- Top Back to Home Navigation Bar -->
-    <div style="padding: 15px 20px; background: #fff; border-bottom: 1px solid #e8ded5;">
-        <a href="index.html" style="color: #c86d51; font-weight: bold; text-decoration: none;">← Back to Main Home</a>
-    </div>
-
-    <!-- Hero Banner Section for Salt Lamps & Decor -->
-    <section class="hero-banner" style="background: linear-gradient(rgba(20, 28, 36, 0.25), rgba(20, 28, 36, 0.25)), url('images/b-salt.jfif') center/cover no-repeat; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;">
-        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Himalayan Salt Lamps & Decor</h1>
-        <p style="font-size: 1.1rem; max-width: 700px;">Handcrafted ambient rock salt lamps and decorative accessories compliant with CE & RoHS European standards.</p>
-    </section>
-
-    <!-- Products Grid -->
-    <section class="products-section">
-        <div class="product-grid">
-
-            <!-- Card 1: Carved Salt Blocks & Slabs -->
-            <div class="product-card">
-                <img src="images/c-salt.jfif" alt="Carved Salt Blocks and Tiles">
-                <div class="product-info">
-                    <h3>Carved Salt Blocks & Slabs</h3>
-                    <p>Hand-carved Himalayan crystal rock salt blocks and tiles with custom relief patterns, ideal for luxury interior decor and spa accents.</p>
-                </div>
-            </div>
-
-            <!-- Card 2: Tea Light Candle Holders -->
-            <div class="product-card">
-                <img src="images/n-salt.jfif" alt="Natural Tea Light Candle Holders">
-                <div class="product-info">
-                    <h3>Tea Light Candle Holders</h3>
-                    <p>Natural hand-shaped pink rock salt candle holders emitting a warm, soothing glow that enhances home ambiance and air quality.</p>
-                </div>
-            </div>
-
-            <!-- Card 3: Geometric Salt Lamps -->
-            <div class="product-card">
-                <img src="images/p-salt.jfif" alt="Pyramid and Sphere Salt Lamps">
-                <div class="product-info">
-                    <h3>Geometric Salt Lamps</h3>
-                    <p>Precision-crafted pyramid and sphere salt crystal lamps mounted on solid rosewood bases, tailored for modern European homes.</p>
-                </div>
-            </div>
-
-            <!-- Card 4: Natural Rough Cut Lamp -->
-            <div class="product-card">
-                <img src="images/n-salt.jfif" alt="Natural Rough Cut Salt Lamp">
-                <div class="product-info">
-                    <h3>Natural Rough Cut Lamp</h3>
-                    <p>Authentic unpolished natural rock salt crystal lamp on a wooden base, preserving natural mineral aesthetics and ionic benefits.</p>
-                </div>
-            </div>
-
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Utility Home Exports</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                    <a href="index.html#products" class="nav-link">Products ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="edible-pink-salt.html">Edible Salt & Spices</a>
+                        <a href="wellness-spa-salt.html">Wellness & Spa Salt</a>
+                        <a href="salt-lamps.html">Salt Lamps & Crafts</a>
+                        <a href="animal-salt-licks.html">Animal Salt Licks</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link btn-header">Contact Us</a></li>
+            </ul>
         </div>
+    </header>
+
+    <section class="page-banner">
+        <h1>Handcrafted Salt Lamps & Decor</h1>
+        <p>Natural Air-Purifying Pink Salt Lamps Mounted on Solid Wooden Bases</p>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Utility Home Export Division. Premium Himalayan Pink Salt Export to All Over The World.</p>
-    </footer>
+    <section class="content-section">
+        <h2>Custom Designs & International Electrical Standards</h2>
+        <p>All lamps are supplied with certified electrical cords (CE, UL, UK standard) and custom master carton packaging.</p>
+        
+        <!-- Three Cards with Images -->
+        <div class="details-grid">
+            <div class="detail-card">
+                <img src="01/008.JPEG" alt="Natural Rough Shape Lamps" class="card-img">
+                <div class="card-content">
+                    <h3>Natural Rough Shape Lamps</h3>
+                    <p>Available in 2-3kg, 3-5kg up to 50kg jumbo sizes with premium rosewood or neem wood bases.</p>
+                </div>
+            </div>
 
+            <div class="detail-card">
+                <img src="01/007.JPEG" alt="Crafted Geometric Lamps" class="card-img">
+                <div class="card-content">
+                    <h3>Crafted Geometric Lamps</h3>
+                    <p>Precision machine carved spheres, pyramids, cylinders, and fire bowls with salt chunks.</p>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <img src="01/009.JPEG" alt="Tea Light Candle Holders" class="card-img">
+                <div class="card-content">
+                    <h3>Tea Light Candle Holders</h3>
+                    <p>Natural and carved single & multi-hole pink salt candle holders for home ambience decor.</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="contact.html" class="btn-order">Request Lamp Catalog & MOQ</a>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Utility Home Export Division</h3>
+                <p>Leading exporter of Himalayan Pink Salt products in Pakistan.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="edible-pink-salt.html">Edible Salt</a>
+                <a href="wellness-spa-salt.html">Spa Products</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>B2B Export Contact</h3>
+                <p>📍 Gujranwala / Khewra, Pakistan</p>
+                <p>📧 Email: export@utilityhome.com</p>
+                <p>📞 Phone/WhatsApp: +92-300-6474593</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Utility Home Export Division.</p>
+        </div>
+    </footer>
 </body>
 </html>
