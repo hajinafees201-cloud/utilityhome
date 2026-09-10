@@ -9,6 +9,129 @@
     <meta name="keywords" content="Himalayan Pink Salt Exporter, Edible Salt Bulk, Salt Lamps Manufacturer Pakistan, Animal Salt Licks, B2B Salt Supplier">
     
     <style>
+  /* Floating WhatsApp Button Style */
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #fff;
+  }
+
+  /* Popup Overlay Style */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(3px);
+  }
+
+  /* Popup Box Style */
+  .popup-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    animation: fadeIn 0.4s ease-in-out;
+    font-family: Arial, sans-serif;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .close-btn:hover { color: #000; }
+
+  .popup-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .popup-header h2 {
+    margin: 0 0 8px 0;
+    color: #1a1a1a;
+    font-size: 22px;
+  }
+
+  .popup-header p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .popup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #333;
+  }
+
+  .popup-form input, 
+  .popup-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .popup-form button {
+    width: 100%;
+    background-color: #d9534f; /* سالٹ تھیم سے ملتا جلتا رنگ */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .popup-form button:hover {
+    background-color: #c9302c;
+  }
         /* CSS RESET & VARIABLES */
         * {
             margin: 0;
@@ -367,6 +490,74 @@
         }
     </style>
 </head>
+    <!-- Font Awesome Icon Library for WhatsApp Logo -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- 1. Floating WhatsApp Button -->
+<!-- فون نمبر کی جگہ اپنا بین الاقوامی واٹس ایپ نمبر بغیر '+' کے درج کریں (مثلاً 923001234567) -->
+<a href="https://wa.me/923001234567?text=Hello,%20I%20am%20interested%20in%20your%20Himalayan%20Pink%20Salt%20products." 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- 2. Free Sample Trial Popup -->
+<div class="popup-overlay" id="samplePopup">
+  <div class="popup-box">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <div class="popup-header">
+      <h2>🎁 Request Free Sample Trial</h2>
+      <p>Get authentic Himalayan Pink Salt samples delivered for your evaluation.</p>
+    </div>
+    
+    <!-- یہ فارم Formspree یا آپ کی اپنی ای میل پر میسج بھیجے گا -->
+    <!-- YOUR_FORMSPREE_ID کی جگہ اپنا فارم لنک یا Formspree ID لگائیں -->
+    <form class="popup-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+      <label for="name">Your Name / Company Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. John Doe / Global Traders" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="name@company.com" required>
+
+      <label for="phone">WhatsApp / Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" required>
+
+      <label for="message">Product Specification / Message</label>
+      <textarea id="message" name="message" rows="3" placeholder="Mention product type (Edible, Salt Lamp, Licks, Granules) and quantity requirements." required></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+</div>
+
+<!-- 3. JavaScript for 5-Second Popup Delay -->
+<script>
+  // ویب سائٹ لوڈ ہونے کے 5 سیکنڈ (5000ms) بعد پاپ اپ ظاہر ہوگا
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      // چیک کریں کہ کیا یوزر اس سیشن میں پہلے پاپ اپ بند تو نہیں کر چکا
+      if (!sessionStorage.getItem('popupClosed')) {
+        document.getElementById('samplePopup').style.display = 'flex';
+      }
+    }, 5000); // 5000 milliseconds = 5 seconds
+  });
+
+  // پاپ اپ بند کرنے کا فنکشن
+  function closePopup() {
+    document.getElementById('samplePopup').style.display = 'none';
+    // ایک بار بند کرنے کے بعد اسی سیشن میں دوبارہ پاپ اپ نہیں آئے گا تاکہ وزٹر تپ نہ جائے
+    sessionStorage.setItem('popupClosed', 'true');
+  }
+
+  // اگر وزٹر پاپ اپ سے باہر کلک کرے تو بھی بند ہو جائے
+  window.onclick = function(event) {
+    var popup = document.getElementById('samplePopup');
+    if (event.target == popup) {
+      closePopup();
+    }
+  }
+</script>
 <body>
 
     <header>
